@@ -1,4 +1,4 @@
 Archetype
 =========
 
-The Archetype programming language
+Compiler for the experimental Arche programming language
