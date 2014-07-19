@@ -1,0 +1,27 @@
+producto := object [2]{
+	- impuestos [1] : int;
+	- precio    [2] : int;
+};
+
+libro := object[1] {
+	inherit instantiate(producto, impuestos := 7);
+	- paginas [1] : int;
+};
+
+video := object[1] {
+	inherit instantiate(producto, impuestos := 19);
+	- duracion [1] : int;
+};
+
+begin
+    object{
+    	- moby_dick  := instantiate(libro, 
+    		paginas := 822, 
+    		precio := 9
+    	);
+    	- el_padrino := instantiate(video, 
+    		duracion :=	143,
+    		precio   := 19
+    	);
+    }
+end
